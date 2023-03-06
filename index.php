@@ -6,8 +6,11 @@ include("auth.php");
 <html>
 <head>
 <meta charset="utf-8">
-<title>Home</title>
-<link rel="stylesheet" href="css/style.css" />
+<title>Inicio</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="stylesheet" type="text/css" href="css/login.css" />
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="css/footer.css" />
 </head>
 <body>
 <div class="form">
