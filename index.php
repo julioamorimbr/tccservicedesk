@@ -1,6 +1,7 @@
 <?php
 //include auth.php file on all secure pages
 include("auth.php");
+require 'menu.php'
 ?>
 <!DOCTYPE html>
 <html>
@@ -19,49 +20,6 @@ include("auth.php");
 	<script src="https://kit.fontawesome.com/3b3d3b4e96.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		<a class="navbar-brand" href="#">TCC</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarNav">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item">
-					<a class="nav-link active" href="#"><i class="fas fa-home"></i> Página Inicial</a>
-				</li>
-                <li class="nav-item">
-					<a class="nav-link active" href="dashboard.php"><i class="fas fa-home"></i> Visão geral</a>
-				</li>
-                <li class="nav-item">
-					<a class="nav-link" href="#"><i class="fas fa-chart-pie"></i> Chamados</a>
-				</li>
-                <li class="nav-item">
-					<a class="nav-link" href="#"><i class="fas fa-chart-pie"></i> Abrir chamado</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#"><i class="fas fa-chart-pie"></i> Relatórios</a>
-				</li>
-                <li class="nav-item">
-					<a class="nav-link" href="#"><i class="fas fa-chart-pie"></i> Departamentos</a>
-				</li>
-                <li class="nav-item">
-					<a class="nav-link" href="#"><i class="fas fa-chart-pie"></i> S.D.I</a>
-				</li>
-			</ul>
-			<ul class="navbar-nav ml-auto">
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						<i class="fas fa-user"></i> <?php echo $_SESSION['username']; ?>
-					</a>
-					<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-						<a class="dropdown-item" href="#"><i class="fas fa-user"></i> Perfil</a>
-                        <a class="dropdown-item" href="logout.php"><i class="fas fa-sign-out-alt"></i> Configurações</a>
-						<a class="dropdown-item" href="logout.php"><i class="fas fa-sign-out-alt"></i> Sair</a>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</nav>
 <div class="form">
 <p>Bem-vindo(a) <?php echo $_SESSION['username']; ?>!</p>
 <p>Essa é uma área segura.</p>
