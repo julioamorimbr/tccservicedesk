@@ -26,7 +26,6 @@ if (isset($_POST['username'])){
 		$result = mysqli_query($con,$query) or die();
 		$rows = mysqli_num_rows($result);
 		
-		die();
         if($rows==1){
 	    $_SESSION['username'] = $username;
             // Redirect user to index.php
