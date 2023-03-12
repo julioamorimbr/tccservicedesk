@@ -11,6 +11,7 @@
 <body>
 <?php
 require('db.php');
+$rankuser = 1;
 // If form submitted, insert values into the database.
 if (isset($_REQUEST['username'])){
         // removes backslashes
@@ -31,9 +32,11 @@ if (isset($_REQUEST['username'])){
 	$setor = mysqli_real_escape_string($con,$setor);
 	$password = stripslashes($_REQUEST['password']);
 	$password = mysqli_real_escape_string($con,$password);
+        $rank = stripslashes($rankuser);
+	$rank = mysqli_real_escape_string($con,$rank);
 	$trn_date = date("Y-m-d H:i:s");
-        $query = "INSERT into `users` (username, password, email, trn_date, dtnasc, nome, sobrenome, empresa, setor)
-VALUES ('$username', '".md5($password)."', '$email', '$trn_date', '$dtnasc', '$nome', '$sobrenome', '$empresa', '$setor')";
+        $query = "INSERT into `usuarios` (username, password, email, trn_date, dtnasc, nome, sobrenome, empresa, setor, rank)
+VALUES ('$username', '".md5($password)."', '$email', '$trn_date', '$dtnasc', '$nome', '$sobrenome', '$empresa', '$setor', '$rank')";
         $result = mysqli_query($con,$query);
         if($result){
             echo "<div class='container'> <div class='boxsucess'>

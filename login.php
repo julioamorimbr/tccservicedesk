@@ -21,16 +21,18 @@ if (isset($_POST['username'])){
 	$password = stripslashes($_REQUEST['password']);
 	$password = mysqli_real_escape_string($con,$password);
 	//Checking is user existing in the database or not
-        $query = "SELECT * FROM `users` WHERE username='$username'
-and password='".md5($password)."'";
-	$result = mysqli_query($con,$query) or die();
-	$rows = mysqli_num_rows($result);
+        $query = "SELECT * FROM `usuarios` WHERE username='$username'
+		and password='".md5($password)."'";
+		$result = mysqli_query($con,$query) or die();
+		$rows = mysqli_num_rows($result);
+		
+		die();
         if($rows==1){
 	    $_SESSION['username'] = $username;
             // Redirect user to index.php
 	    header("Location: index.php");
          }else{
-	echo "<div class='container'> <div class='boxsucess'>
+		echo "<div class='container'> <div class='boxsucess'>
                 <h3>Usuário e senha incorretos.</h3>
                 <br>Clique aqui para <a href='login.php'>logar</a></div></div>";
 	}
