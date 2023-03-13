@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
 <link rel="stylesheet" type="text/css" href="css/login.css" />
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 <link rel="stylesheet" type="text/css" href="css/footer.css" />
@@ -17,25 +17,13 @@
 		<div class="collapse navbar-collapse" id="navbarNav">
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item">
-					<a class="nav-link active" href="#"><i class="fas fa-home"></i> Página Inicial</a>
+					<a class="nav-link active" href="index.php"><i class="fas fa-home"></i> Página inicial </a>
 				</li>
                 <li class="nav-item">
-					<a class="nav-link active" href="dashboard.php"><i class="fas fa-home"></i> Visão geral</a>
+					<a class="nav-link" href="chamados.php"><i class="fas fa-chart-pie"></i> Meus chamados </a>
 				</li>
                 <li class="nav-item">
-					<a class="nav-link" href="#"><i class="fas fa-chart-pie"></i> Chamados</a>
-				</li>
-                <li class="nav-item">
-					<a class="nav-link" href="#"><i class="fas fa-chart-pie"></i> Abrir chamado</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#"><i class="fas fa-chart-pie"></i> Relatórios</a>
-				</li>
-                <li class="nav-item">
-					<a class="nav-link" href="#"><i class="fas fa-chart-pie"></i> Departamentos</a>
-				</li>
-                <li class="nav-item">
-					<a class="nav-link" href="#"><i class="fas fa-chart-pie"></i> S.D.I</a>
+					<a class="nav-link" href="novo.php"><i class="fas fa-chart-pie"></i> Abrir chamado </a>
 				</li>
 			</ul>
 			<ul class="navbar-nav ml-auto">
@@ -45,7 +33,7 @@
 					</a>
 					<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
 						<a class="dropdown-item" href="#"><i class="fas fa-user"></i> Perfil</a>
-                        <a class="dropdown-item" href="logout.php"><i class="fas fa-sign-out-alt"></i> Configurações</a>
+                        <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> Configurações</a>
 						<a class="dropdown-item" href="logout.php"><i class="fas fa-sign-out-alt"></i> Sair</a>
 					</div>
 				</li>

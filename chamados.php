@@ -7,7 +7,7 @@ require 'menu.php'
 <html>
 <head>
 <meta charset="utf-8">
-<title>Dashboard</title>
+<title>Chamados</title>
 <link rel="stylesheet" type="text/css" href="css/style.css" />
 <link rel="stylesheet" type="text/css" href="css/login.css" />
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -17,7 +17,7 @@ require 'menu.php'
 </head>
 <body>
 <div class="form">
-<p>Dashboard</p>
+<p>Chamados</p>
 <p>Essa é outra página segura.</p>
 <p><a href="index.php">Home</a></p>
 <a href="logout.php">Sair</a>

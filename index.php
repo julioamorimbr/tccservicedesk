@@ -1,6 +1,6 @@
 <?php
 //include auth.php file on all secure pages
-include("auth.php");
+include("includes/auth.php");
 require 'menu.php'
 ?>
 <!DOCTYPE html>
@@ -8,7 +8,7 @@ require 'menu.php'
 <head>
 <meta charset="utf-8">
 <title>Inicio</title>
-<link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
 <link rel="stylesheet" type="text/css" href="css/login.css" />
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 <link rel="stylesheet" type="text/css" href="css/footer.css" />

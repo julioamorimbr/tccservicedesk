@@ -3,34 +3,32 @@
 <head>
 <meta charset="utf-8">
 <title>Entrar</title>
-<link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
 <link rel="stylesheet" type="text/css" href="css/login.css" />
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 <link rel="stylesheet" type="text/css" href="css/footer.css" />
 </head>
 <body>
 <?php
-require('db.php');
+require('includes/db.php');
 session_start();
-// If form submitted, insert values into the database.
+
 if (isset($_POST['username'])){
-        // removes backslashes
+       
 	$username = stripslashes($_REQUEST['username']);
-        //escapes special characters in a string
-	$username = mysqli_real_escape_string($con,$username);
+	$username = mysqli_real_escape_string($con,$username); 
 	$password = stripslashes($_REQUEST['password']);
 	$password = mysqli_real_escape_string($con,$password);
 	//Checking is user existing in the database or not
         $query = "SELECT * FROM `usuarios` WHERE username='$username'
-		and password='".md5($password)."'";
+		and password='".md5($password)."' and rank = '1'";
 		$result = mysqli_query($con,$query) or die();
 		$rows = mysqli_num_rows($result);
-		
+
         if($rows==1){
 	    $_SESSION['username'] = $username;
-            // Redirect user to index.php
 	    header("Location: index.php");
-         }else{
+		} else{
 		echo "<div class='container'> <div class='boxsucess'>
                 <h3>Usuário e senha incorretos.</h3>
                 <br>Clique aqui para <a href='login.php'>logar</a></div></div>";

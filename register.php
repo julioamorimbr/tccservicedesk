@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <title>Criar conta</title>
-<link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
 <link rel="stylesheet" type="text/css" href="css/login.css" />
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 <link rel="stylesheet" type="text/css" href="css/footer.css" />
 </head>
 <body>
 <?php
-require('db.php');
+require('includes/db.php');
 $rankuser = 1;
 // If form submitted, insert values into the database.
 if (isset($_REQUEST['username'])){

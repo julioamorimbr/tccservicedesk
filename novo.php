@@ -7,7 +7,7 @@ require 'menu.php'
 <html>
 <head>
 <meta charset="utf-8">
-<title>Dashboard</title>
+<title>Novo chamado</title>
 <link rel="stylesheet" type="text/css" href="css/style.css" />
 <link rel="stylesheet" type="text/css" href="css/login.css" />
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -17,10 +17,15 @@ require 'menu.php'
 </head>
 <body>
 <div class="form">
-<p>Dashboard</p>
-<p>Essa é outra página segura.</p>
-<p><a href="index.php">Home</a></p>
-<a href="logout.php">Sair</a>
+		<br>
+	     <h2>Abrir novo chamado</h2>
+	     <p>Escreva abaixo com o máximo de detalhes possível a sua solicitação</p>
+
+	     <textarea rows="12" class="form-control" id="result" spellcheck="false"></textarea>
+
+	     <br>
+
+	     <button class="btn btn-lg btn-warning" onclick="executar()">Enviar</button>
 </div>
 </body>
 </html>
